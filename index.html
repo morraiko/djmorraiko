@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Morraiko | Dossier Oficial & EPK 2026</title>
+    <meta name="description" content="Dossier oficial y Electronic Press Kit (EPK) de DJ Morraiko (Morraiko Kumbia Selektah) para 2026. Contratación, biografía, música y fechas.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #ff4e00;
+            --primary-gradient: linear-gradient(135deg, #ff4e00 0%, #ec008c 100%);
+            --secondary: #ec008c;
+            --dark-bg: #09090b;
+            --card-bg: rgba(20, 20, 25, 0.65);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --glass-bg: rgba(20, 20, 25, 0.75);
+            --text-light: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --glow: 0 0 20px rgba(255, 78, 0, 0.35);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 78, 0, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(236, 0, 140, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Glassmorphism Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(9, 9, 11, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--card-border);
+            padding: 16px 0;
+            transition: all 0.3s ease;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-light);
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+            border-radius: 4px;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+            padding: 4px 0;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-gradient);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .cta-btn {
+            background: var(--primary-gradient);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--glow);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(255, 78, 0, 0.55);
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            padding: 180px 0 100px 0;
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .hero-content h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(48px, 6vw, 76px);
+            line-height: 1.1;
+            letter-spacing: -2px;
+            margin-bottom: 16px;
+            font-weight: 900;
+        }
+
+        .hero-content h1 span {
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-tagline {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 24px;
+            border-left: 4px solid var(--primary);
+            padding-left: 16px;
+        }
+
+        .hero-bio-summary {
+            color: var(--text-muted);
+            font-size: 16px;
+            margin-bottom: 32px;
+            max-width: 500px;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--card-border);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .badge:hover {
+            background: rgba(255, 78, 0, 0.1);
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--card-border);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text-light);
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--text-muted);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Image/Visual Panel */
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-circle-deco {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: var(--primary-gradient);
+            filter: blur(100px);
+            opacity: 0.15;
+            z-index: -1;
+        }
+
+        .hero-image-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 16px;
+            width: 100%;
+            max-width: 440px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            transform: rotate(2deg);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .hero-image-card:hover {
+            transform: rotate(0deg) translateY(-8px);
+            border-color: rgba(255, 78, 0, 0.3);
+            box-shadow: 0 30px 60px rgba(255, 78, 0, 0.15);
+        }
+
+        .hero-image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-image-caption {
+            margin-top: 16px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        /* Section Global Settings */
+        section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-header {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: clamp(32px, 4vw, 42px);
+            font-weight: 800;
+            margin-bottom: 12px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--primary-gradient);
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Concept & Bio Section */
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 48px;
+        }
+
+        .bio-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 32px;
+            backdrop-filter: blur(10px);
+        }
+
+        .concept-title {
+            color: var(--primary);
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bio-text p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .bio-text strong {
+            color: #fff;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background: rgba(255, 78, 0, 0.05);
+            border-color: rgba(255, 78, 0, 0.2);
+            transform: translateY(-4px);
+        }
+
+        .stat-num {
+            font-size: 36px;
+            font-weight: 900;
+            font-family: 'Outfit', sans-serif;
+            color: var(--primary);
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Visual representation of Fiesta Parda styles */
+        .style-radar {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 32px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .radar-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .bar-wrap {
+            margin-bottom: 18px;
+        }
+
+        .bar-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+
+        .bar-label span:nth-child(2) {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .bar-bg {
+            height: 10px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+        }
+
+        .bar-fill {
+            height: 100%;
+            background: var(--primary-gradient);
+            border-radius: 10px;
+            width: 0;
+            transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1);
+        }
+
+        /* Interactive Audio Player */
+        .player-card {
+            background: linear-gradient(135deg, rgba(20, 20, 25, 0.8) 0%, rgba(10, 10, 12, 0.95) 100%);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 32px;
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .player-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .player-vinyl-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .vinyl {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background: 
+                radial-gradient(circle at center, #09090b 20%, #18181b 22%, #18181b 30%, #ff4e00 31%, #ec008c 35%, #09090b 36%, #18181b 45%, #000 70%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(255, 255, 255, 0.1);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: spin 6s linear infinite;
+            animation-play-state: paused;
+        }
+
+        .vinyl.playing {
+            animation-play-state: running;
+        }
+
+        .vinyl-center {
+            width: 50px;
+            height: 50px;
+            background: var(--dark-bg);
+            border-radius: 50%;
+            border: 2px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .vinyl-center img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .vinyl::after {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 90%;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        .player-details {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .track-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .track-artist {
+            font-size: 14px;
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Custom visualizer bars */
+        .visualizer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 4px;
+            height: 32px;
+            margin-top: 16px;
+        }
+
+        .visualizer-bar {
+            width: 3px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 3px;
+            transition: height 0.1s ease;
+        }
+
+        /* Playback Dashboard */
+        .player-dashboard {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .tracklist {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .track-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--card-border);
+            padding: 12px 16px;
+            border-radius: 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .track-item:hover, .track-item.active {
+            background: rgba(255, 78, 0, 0.08);
+            border-color: rgba(255, 78, 0, 0.3);
+            transform: translateX(4px);
+        }
+
+        .track-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .track-info i {
+            color: var(--text-muted);
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .track-item.active .track-info i {
+            color: var(--primary);
+        }
+
+        .track-name {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .track-time {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Slider Progress Bar */
+        .progress-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+        }
+
+        .progress-bar {
+            flex-grow: 1;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--primary-gradient);
+            width: 0%;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .time-text {
+            font-size: 12px;
+            color: var(--text-muted);
+            min-width: 35px;
+            text-align: center;
+        }
+
+        /* Player Controls */
+        .player-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: 8px;
+        }
+
+        .control-btn {
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .control-btn:hover {
+            color: var(--primary);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .play-btn {
+            width: 56px;
+            height: 56px;
+            background: var(--primary-gradient);
+            color: #fff;
+            font-size: 22px;
+            box-shadow: var(--glow);
+        }
+
+        .play-btn:hover {
+            color: #fff;
+            transform: scale(1.08);
+            box-shadow: 0 0 25px rgba(255, 78, 0, 0.6);
+            background: var(--primary-gradient);
+        }
+
+        /* Timeline Section */
+        .timeline {
+            position: relative;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--card-border);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 4px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            opacity: 1;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: var(--dark-bg);
+            border: 4px solid var(--primary);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 10px rgba(255, 78, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover::after {
+            background-color: var(--primary);
+            transform: scale(1.2);
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            padding: 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            position: relative;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        .timeline-content:hover {
+            border-color: rgba(255, 78, 0, 0.25);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .timeline-date {
+            font-family: 'Outfit', sans-serif;
+            font-size: 14px;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 8px;
+            display: inline-block;
+            padding: 2px 10px;
+            background: rgba(255, 78, 0, 0.1);
+            border-radius: 50px;
+            border: 1px solid rgba(255, 78, 0, 0.2);
+        }
+
+        .timeline-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+
+        .timeline-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .timeline-badge {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        /* Press Assets Section */
+        .assets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .asset-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .asset-card:hover {
+            border-color: rgba(255, 78, 0, 0.25);
+            transform: translateY(-6px);
+        }
+
+        .asset-preview {
+            width: 100%;
+            height: 200px;
+            border-radius: 12px;
+            background: #121214;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.04);
+        }
+
+        .asset-preview img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            transition: all 0.3s ease;
+        }
+
+        .asset-card:hover .asset-preview img {
+            transform: scale(1.08);
+        }
+
+        .asset-info h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .asset-info p {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        /* Booking / Contact Form Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 48px;
+        }
+
+        .contact-info-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 40px 32px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .info-block h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+
+        .info-block p {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .info-block a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .info-block a:hover {
+            color: var(--primary);
+        }
+
+        .social-row {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+        }
+
+        .social-circle {
+            width: 44px;
+            height: 44px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--card-border);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 18px;
+        }
+
+        .social-circle:hover {
+            background: var(--primary-gradient);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: var(--glow);
+            border-color: transparent;
+        }
+
+        .contact-form-wrap {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            background: rgba(9, 9, 11, 0.5);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: #fff;
+            font-family: inherit;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(255, 78, 0, 0.15);
+            background: rgba(9, 9, 11, 0.8);
+        }
+
+        .success-msg {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #10b981;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            display: none;
+            align-items: center;
+            gap: 12px;
+            font-weight: 500;
+        }
+
+        .error-msg {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #ef4444;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            display: none;
+            align-items: center;
+            gap: 12px;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            background: #040405;
+            border-top: 1px solid var(--card-border);
+            padding: 48px 0;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .footer-logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+                text-align: center;
+            }
+            .hero-tagline {
+                border-left: none;
+                border-bottom: 4px solid var(--primary);
+                padding-left: 0;
+                padding-bottom: 12px;
+                display: inline-block;
+            }
+            .hero-bio-summary {
+                margin: 0 auto 32px auto;
+            }
+            .hero-badges {
+                justify-content: center;
+            }
+            .hero-actions {
+                justify-content: center;
+            }
+            .hero-image-card {
+                transform: none;
+            }
+            .grid-2col {
+                grid-template-columns: 1fr;
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 12px 0;
+            }
+            nav {
+                display: none; /* Mobile menu can be simplified */
+            }
+            .timeline::after {
+                left: 31px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            .timeline-item::after {
+                left: 21px;
+            }
+            .right {
+                left: 0%;
+            }
+            .right::after {
+                left: 21px;
+            }
+            .player-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo-wrap">
+                <img src="Logo_02_blanco.png" alt="DJ Morraiko Logo" class="logo-img" onerror="this.src='Logo_01.png'; this.onerror=null;">
+                <span class="logo-text">DJ MORRAIKO</span>
+            </a>
+            <nav>
+                <a href="#hero">Inicio</a>
+                <a href="#bio">Biografía</a>
+                <a href="#musica">Escuchar</a>
+                <a href="#eventos">Trayectoria</a>
+                <a href="#descargas">Prensa</a>
+                <a href="#booking">Contratación</a>
+            </nav>
+            <a href="#booking" class="cta-btn">
+                <i class="fa-solid fa-calendar-check"></i> Contratar EPK
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h2>Electronic Press Kit 2026</h2>
+                <h1>Cumbia, Balkan & <span>Fiesta Parda</span></h1>
+                <div class="hero-tagline">"De Cáceres para el mundo"</div>
+                <p class="hero-bio-summary">
+                    DJ Morraiko fusiona cumbia, música balcánica, ska, dancehall y ritmos africanos en sus arrolladoras sesiones 'Fiesta Parda'. Con más de una década electrizando los escenarios, es el referente indiscutible de la fusión bailable en Extremadura.
+                </p>
+                <div class="hero-badges">
+                    <span class="badge">#Cumbia</span>
+                    <span class="badge">#Balkan</span>
+                    <span class="badge">#Ska</span>
+                    <span class="badge">#Dancehall</span>
+                    <span class="badge">#Kuduro</span>
+                    <span class="badge">#FiestaParda</span>
+                </div>
+                <div class="hero-actions">
+                    <a href="https://djmorraiko.bandcamp.com/music" target="_blank" class="cta-btn"><i class="fa-solid fa-play"></i> Escuchar en Bandcamp</a>
+                    <a href="dossier_2026.html" target="_blank" class="btn-outline"><i class="fa-solid fa-eye"></i> Ver Dossier Digital</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-circle-deco"></div>
+                <div class="hero-image-card">
+                    <!-- Link to Logo_03.png as requested by the user -->
+                    <img src="Logo_03.png" alt="DJ Morraiko Logo" onerror="this.src='Logo_01.png';">
+                    <div class="hero-image-caption">DJ Morraiko - Logotipo Oficial 2026</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Biografía & Concepto Section -->
+    <section id="bio">
+        <div class="container">
+            <div class="section-header">
+                <h2>El Concepto Fiesta Parda</h2>
+                <p>Música sin fronteras que induce al movimiento, el baile y la alegría colectiva.</p>
+            </div>
+            <div class="grid-2col">
+                <div class="bio-card">
+                    <div class="concept-title">
+                        <i class="fa-solid fa-fire-flame-curved"></i> ¿Qué es la Fiesta Parda?
+                    </div>
+                    <div class="bio-text">
+                        <p>
+                            La <strong>Fiesta Parda</strong> no es una simple sesión de DJ. Es un concepto musical
+                            ideado para inducir al baile desenfrenado y la alegría pura. Sus actuaciones son un crisol
+                            rítmico multicultural, lleno de versiones locas que te harán moverte y despiporrar.
+                        </p>
+                        <p>
+                            En sus sets en vivo, mezcla con maestría y dinamismo ritmos de <strong>Cumbia, Música
+                                Balcánica, Ska, Dancehall, Kuduro, Rumba y ritmos africanos</strong>. El resultado es un
+                            directo cargado de energía festiva que conecta de forma inmediata con todo tipo de públicos,
+                            desde festivales de rock alternativo hasta eventos culturales y de cohesión social.
+                        </p>
+                        <p>
+                            Con más de una década electrizando los escenarios de Extremadura, Castilla, Galicia y
+                            Portugal, DJ Morraiko representa a una generación de artistas que unen de manera brillante
+                            lo local y lo global, combinando tradición y modernidad.
+                        </p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-num">12+</div>
+                            <div class="stat-label">Años de Trayectoria</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-num">200+</div>
+                            <div class="stat-label">Gigs en Directo</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="style-radar">
+                    <div class="radar-title">Fórmula Sonora (%)</div>
+                    
+                    <div class="bar-wrap">
+                        <div class="bar-label">
+                            <span>Cumbia & Ritmos Latinos</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-wrap">
+                        <div class="bar-label">
+                            <span>Balkan & Gypsy Brass</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-wrap">
+                        <div class="bar-label">
+                            <span>Ska & Reggae-core & Dub</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bar-wrap">
+                        <div class="bar-label">
+                            <span>Dancehall, Kuduro & Afrobeat</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar-wrap">
+                        <div class="bar-label">
+                            <span>Rumba & Mestizaje & Versionacas</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-fill" style="width: 70%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music & Simulated Player Section -->
+    <section id="musica" style="background-color: rgba(255, 255, 255, 0.01);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Escucha & Descarga su Música</h2>
+                <p>Reproduce sus canciones más destacadas y accede a sus perfiles de distribución oficiales.</p>
+            </div>
+            
+            <div class="player-card">
+                <div class="player-grid">
+                    <div class="player-vinyl-wrap">
+                        <div class="vinyl" id="vinyl">
+                            <div class="vinyl-center">
+                                <img src="Logo_01.png" alt="Morraiko Logo Center">
+                            </div>
+                        </div>
+                        <div class="player-details">
+                            <div class="track-title" id="track-title">Balkanwomad</div>
+                            <div class="track-artist" id="track-artist">DJ Morraiko</div>
+                        </div>
+                        <!-- Visualizer bars which animate during play -->
+                        <div class="visualizer" id="visualizer">
+                            <div class="visualizer-bar"></div>
+                            <div class="visualizer-bar"></div>
+                            <div class="visualizer-bar"></div>
+                            <div class="visualizer-bar"></div>
+                            <div class="visualizer-bar"></div>
+                            <div class="visualizer-bar"></div>
+                            <div class="visualizer-bar"></div>
+                            <div class="visualizer-bar"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="player-dashboard">
+                        <ul class="tracklist">
+                            <li class="track-item active" data-index="0" data-name="Balkanwomad" data-duration="02:48">
+                                <div class="track-info">
+                                    <i class="fa-solid fa-compact-disc"></i>
+                                    <span class="track-name">1. Balkanwomad - Sencillo</span>
+                                </div>
+                                <span class="track-time">02:48</span>
+                            </li>
+                            <li class="track-item" data-index="1" data-name="El Embargo" data-duration="03:21">
+                                <div class="track-info">
+                                    <i class="fa-solid fa-compact-disc"></i>
+                                    <span class="track-name">2. El Embargo - Sencillo</span>
+                                </div>
+                                <span class="track-time">03:21</span>
+                            </li>
+                            <li class="track-item" data-index="2" data-name="Huele a Azufre" data-duration="03:16">
+                                <div class="track-info">
+                                    <i class="fa-solid fa-compact-disc"></i>
+                                    <span class="track-name">3. Huele a Azufre - Sencillo</span>
+                                </div>
+                                <span class="track-time">03:16</span>
+                            </li>
+                            <li class="track-item" data-index="3" data-name="No a La Mina" data-duration="02:36">
+                                <div class="track-info">
+                                    <i class="fa-solid fa-compact-disc"></i>
+                                    <span class="track-name">4. No a La Mina - Sencillo</span>
+                                </div>
+                                <span class="track-time">02:36</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="progress-container">
+                            <span class="time-text" id="current-time">00:00</span>
+                            <div class="progress-bar" id="progress-bar">
+                                <div class="progress-fill" id="progress-fill"></div>
+                            </div>
+                            <span class="time-text" id="total-time">02:48</span>
+                        </div>
+                        
+                        <div class="player-controls">
+                            <button class="control-btn" id="prev-btn"><i class="fa-solid fa-backward-step"></i></button>
+                            <button class="control-btn play-btn" id="play-btn"><i class="fa-solid fa-play" id="play-icon"></i></button>
+                            <button class="control-btn" id="next-btn"><i class="fa-solid fa-forward-step"></i></button>
+                            <button class="control-btn" id="mute-btn"><i class="fa-solid fa-volume-high" id="mute-icon"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="https://djmorraiko.bandcamp.com/music" target="_blank" class="cta-btn" style="background: #1da0c3; box-shadow: 0 0 20px rgba(29, 160, 195, 0.3);"><i class="fa-brands fa-bandcamp"></i> Descargar Música en Bandcamp</a>
+                <a href="https://www.mixcloud.com/Morraiko/" target="_blank" class="cta-btn" style="background: #52aad3; box-shadow: 0 0 20px rgba(82, 170, 211, 0.3);"><i class="fa-brands fa-mixcloud"></i> Escuchar Sets en Mixcloud</a>
+                <a href="https://www.youtube.com/live/csBHm30vmwk?si=h_sW-bm3QWbDdCfM&t=14520" target="_blank" class="btn-outline"><i class="fa-brands fa-youtube"></i> Ver Sesión Directo en YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline / Path Section -->
+    <section id="eventos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cronología & Actuaciones Destacadas</h2>
+                <p>El extenso recorrido de DJ Morraiko electrizando pistas y festivales de todos los formatos.</p>
+            </div>
+
+            <div class="timeline">
+                <!-- MAYO 2026 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mayo 2026</span>
+                        <h3 class="timeline-title">Bellota Rock 2026</h3>
+                        <p class="timeline-desc">Abonado a la gran <strong>Sesión Vermut</strong> del sábado 30 de mayo desde las 16:00h en Valdencín (Cáceres). El broche de oro diurno en uno de los festivales autogestionados más importantes del circuito extremeño.</p>
+                        <span class="timeline-badge">Próximo Show</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mayo 2026 (Sábado)</span>
+                        <h3 class="timeline-title">Cierre de Finde en Bambú</h3>
+                        <p class="timeline-desc">La gran Fiesta Parda del sábado llega para cerrar un finde de pura locura como se merece: a las 2:00 AM en Bambú. Después de tres días de bailes, encuentros y buen rollo, rematamos la jugada con DJ Morraiko y una sesión para romper la pista hasta que salga el sol.</p>
+                        <span class="timeline-badge">Clubbing</span>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jueves 7 de Mayo 2026</span>
+                        <h3 class="timeline-title">WOMAD 2026 - Los Pájaros</h3>
+                        <p class="timeline-desc">WOMAD 2026 !! FIESTA PARDA POST A GARULLA 🐉🔥 Después del concierto de A Garulla, seguimos la locura en el primer día del WOMAD 2026 🌍🎶 Nos vemos en Los Pájaros para rematar la noche como merece: ritmo, baile, calor y Fiesta parda 💥🕺 (10:00 PM).</p>
+                        <span class="timeline-badge">WOMAD 2026</span>
+                    </div>
+                </div>
+
+                <!-- MARZO 2026 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Marzo 2026</span>
+                        <h3 class="timeline-title">Mudarte "Fiesta Alaire" (Cáceres)</h3>
+                        <p class="timeline-desc">Pedazo de fiestón nos pegamos en la Asociación Mudarte junto a la legendaria <strong>FRAC</strong>, <strong>KHS Crew</strong> que partió el escenario con el fiestón que formaron y <strong>Croma Ballinoti</strong>.</p>
+                        <span class="timeline-badge">Fiesta solidaria Alaire</span>
+                    </div>
+                </div>
+
+                <!-- FEBRERO 2026 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Febrero 2026</span>
+                        <h3 class="timeline-title">Festival Skaceres</h3>
+                        <p class="timeline-desc">Sesión especial y enérgica en Cáceres dentro de la gran fiesta del ska que anualmente se celebra en la ciudad de Cáceres.</p>
+                        <span class="timeline-badge">Ska Cáceres 2026</span>
+                    </div>
+                </div>
+
+                <!-- DICIEMBRE 2025 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Diciembre 2025</span>
+                        <h3 class="timeline-title">Concetropikal & Nochebuena 2025</h3>
+                        <p class="timeline-desc">Set especial en el brutal evento que desde hace años organiza el mítico bar los Pájaros la "Concetropikal". También se formó la fiesta parda en las *Cañas de Nochebuena* de la Chicha, en la plaza de Santiago, Cáceres.</p>
+                        <span class="timeline-badge">Fiestas Navideñas</span>
+                    </div>
+                </div>
+
+                <!-- SEPTIEMBRE 2025 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septiembre 2025</span>
+                        <h3 class="timeline-title">Día de las Lenguas en Plasencia</h3>
+                        <p class="timeline-desc">Noche inolvidable en Plasencia compartiendo escenario junto a los teloneros <strong>Sanguijuelas del Guadiana</strong>, <strong>Fonal</strong> y <strong>Canchalera</strong>.</p>
+                        <span class="timeline-badge">Día de las lenguas</span>
+                    </div>
+                </div>
+
+                <!-- AGOSTO 2025 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">31 de Agosto 2025</span>
+                        <h3 class="timeline-title">Mesón Maleja Tupa (Baños de Montemayor)</h3>
+                        <p class="timeline-desc">Se viene la última Fiesta Parda de agosto con DJ Morraiko en Baños de Montemayor, ¡y no te la puedes perder! A partir de las 16:30. ¡Dale el cierre más salvaje a las fiestas! Prepara calzado cómodo, tu mejor buen rollo y ven a bailar cumbia, balkan, ska y global beats hasta que el cuerpo diga basta.</p>
+                        <span class="timeline-badge">Cierre de Fiestas</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Agosto 2025</span>
+                        <h3 class="timeline-title">Locura Extrema en Pinofranqueado</h3>
+                        <p class="timeline-desc">Despliegue total en el festival <strong>Rock in Pino</strong>, durante tres días que marcaron un antes y un después: el <strong>Prepino</strong>, el camión punk-cumbiero-balcánico, y la prolongación con el <strong>Postpino</strong> hasta que los cuerpos aguantaran el ritmo.</p>
+                        <span class="timeline-badge">Festivales</span>
+                    </div>
+                </div>
+
+                <!-- JULIO 2025 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Julio 2025</span>
+                        <h3 class="timeline-title">Festival Villaembrujada</h3>
+                        <p class="timeline-desc">Participación el 4 de julio de 2025 en Villagarcía de la Torre (Badajoz), en la mítica vuelta de este festival tras quince años de ausencia.</p>
+                        <span class="timeline-badge">Festivales</span>
+                    </div>
+                </div>
+
+                <!-- DICIEMBRE 2024 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sábado 21 Diciembre 2024</span>
+                        <h3 class="timeline-title">La Conce Tropikal (Cáceres)</h3>
+                        <p class="timeline-desc">En estas fechas tan señaladas... vuelve la #conce #tropikal, #cumbia #balkan #dancehall #ska #kuduro en la #fiestaparda más navideña en #caceres.</p>
+                        <span class="timeline-badge">Especial Navidad</span>
+                    </div>
+                </div>
+
+                <!-- NOVIEMBRE 2024 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sábado 9 Noviembre 2024</span>
+                        <h3 class="timeline-title">Concentración Bloquera Barruecos 2024</h3>
+                        <p class="timeline-desc">Fiesta parda, cumbia, dancehall, balkan y muchas ganas de pasarlo bien en la concentración bloquera Barruecos 2024, en Barruecos, en San Isidro. Kumbia y escalada en Malpartida de Cáceres.</p>
+                        <span class="timeline-badge">Escalada & Kumbia</span>
+                    </div>
+                </div>
+
+                <!-- AGOSTO 2024 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Agosto 2024</span>
+                        <h3 class="timeline-title">Grimalrock 2024</h3>
+                        <p class="timeline-desc">Sesión especial en el Grimalrock 2024, compartiendo escenario con los enormes <strong>Stafas</strong>, <strong>Cristosaurio, Tobogán, Karne Cruda y Asina Onde</strong> en <strong>Grimaldo</strong> (Cáceres).</p>
+                        <span class="timeline-badge">Festivales</span>
+                    </div>
+                </div>
+
+                <!-- JULIO 2024 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sábado 20 Julio 2024</span>
+                        <h3 class="timeline-title">Rehuiju Fest (Talaveruela de la Vera)</h3>
+                        <p class="timeline-desc">El sábado 20 de julio OSCEC y Talaveruela fomentan el Arte y la Cultura extremeña con el Rehuiju Fest. Con motivo de la Constitución del grupo joven de OSCEC, jornada de trabajo en Talaveruela finalizando a las 21:30h en la Piscina Municipal con la actuación de Emblay, Prosav, Yago, Me gustas Fer, Fônal y DJ Morraiko.</p>
+                        <span class="timeline-badge">Cultura & Fusión</span>
+                    </div>
+                </div>
+
+                <!-- MAYO 2024 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sábado 11 Mayo 2024</span>
+                        <h3 class="timeline-title">WOMAD Cáceres - Los Pájaros</h3>
+                        <p class="timeline-desc">Este sábado a partir de las 22:00h el evento más bailable del WOMAD Cáceres, con dos DJs con muchas ganas de Fiesta Parda: Desde Galizaceibe DJ Boomer con música en lenguas minoritarias y desde La Conce Tropikal @djmorraiko con batería llena de cumbia, ska y balkan.</p>
+                        <span class="timeline-badge">WOMAD Cáceres</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mayo 2024</span>
+                        <h3 class="timeline-title">Distribución Digital Oficial</h3>
+                        <p class="timeline-desc">Lanzamiento oficial de sus temas de estudio *"Huele a Azufre"*, *"Actyva 10 años"* y *"No a La Mina"* en Bandcamp y agregadores globales.</p>
+                        <span class="timeline-badge">Estudio</span>
+                    </div>
+                </div>
+
+                <!-- ABRIL 2024 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Abril 2024</span>
+                        <h3 class="timeline-title">10 años de Cooperativa Actyva</h3>
+                        <p class="timeline-desc">Cierre musical especial y celebración en la gran Muestra Social por la primera década de la cooperativa de economía social en Cáceres.</p>
+                        <span class="timeline-badge">Economía Social</span>
+                    </div>
+                </div>
+
+                <!-- MARZO 2024 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Viernes Marzo 2024</span>
+                        <h3 class="timeline-title">Mano a mano en Los Pájaros</h3>
+                        <p class="timeline-desc">¡Sí, sí, sí! Este viernes DJ Osma y un servidor estaremos en los Pájaros poniendo musicón de 22:00 a 3:00. Si estáis por Cáceres no os lo perdáis.</p>
+                        <span class="timeline-badge">Los Pájaros DJ Set</span>
+                    </div>
+                </div>
+
+                <!-- MARZO 2025 (Ordered chronologically into 2025!) -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sábado 29 Marzo 2025</span>
+                        <h3 class="timeline-title">El Túnel (Hervás)</h3>
+                        <p class="timeline-desc">¡Feliz 25 de marzo, verdadero Día de Extremadura! Este sábado 29 de marzo #fiestaparda en Hervás, en El Túnel a partir de las 22:00h. ¡Vamos a partirnos bailando!</p>
+                        <span class="timeline-badge">Día de Extremadura</span>
+                    </div>
+                </div>
+
+                <!-- ANTERIORES HISTÓRICOS -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Octubre 2023</span>
+                        <h3 class="timeline-title">Aniversario de Mudarte (Cáceres)</h3>
+                        <p class="timeline-desc">Gran celebración musical y dinamización de las actividades por el cumpleaños de la Asociación de promoción cultural Mudarte.</p>
+                        <span class="timeline-badge">Aniversario Mudarte</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Septiembre 2023</span>
+                        <h3 class="timeline-title">Jardín de la Alegría (Hervás)</h3>
+                        <p class="timeline-desc">Sesión mágica al aire libre llena de global beats, cumbia y ritmos mestizos en uno de los rincones con más encanto de Hervás.</p>
+                        <span class="timeline-badge">Jardín de la Alegría</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Agosto 2023 (Camión)</span>
+                        <h3 class="timeline-title">Camionako - Rock en Pino 2023</h3>
+                        <p class="timeline-desc">Despliegue móvil en un espectacular camión de música abriendo el festival Rock en Pino por todo Pinofranqueado.</p>
+                        <span class="timeline-badge">Pinofranqueado</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Agosto 2023</span>
+                        <h3 class="timeline-title">Festival Festança (Portugal)</h3>
+                        <p class="timeline-desc">Representación internacional en Portugal, contagiando a nuestros vecinos a ritmo de Fiesta Parda y cumbia fronteriza.</p>
+                        <span class="timeline-badge">Portugal</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Octubre 2021</span>
+                        <h3 class="timeline-title">III Festival Zaleando el Racismo</h3>
+                        <p class="timeline-desc">Set principal de Fiesta Parda en Segura de Toro (Cáceres), dentro de la programación contra la discriminación social.</p>
+                        <span class="timeline-badge">Solidario</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Febrero 2020</span>
+                        <h3 class="timeline-title">Carnavales de Hervás</h3>
+                        <p class="timeline-desc">Espectáculo masivo de "Fiesta Parda" en un inolvidable carnaval de Hervás con público entregado como siempre en ese precioso lugar.</p>
+                        <span class="timeline-badge">Carnaval</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Mayo 2014</span>
+                        <h3 class="timeline-title">Feria de Cáceres: Gran Fiesta Iboga</h3>
+                        <p class="timeline-desc">Histórico set dentro de la carpa de la Gran Familia en la Feria de Cáceres, compartiendo cartel en una noche mítica junto a <strong>La Trocamba Matanusca</strong>, <strong>Spin Te Ku</strong> y <strong>María Turme</strong>.</p>
+                        <span class="timeline-badge">Mítico</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Press Assets Section -->
+    <section id="descargas" style="background-color: rgba(255, 255, 255, 0.01);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recursos de Prensa & Descargas</h2>
+                <p>Logotipos oficiales y dossier actualizado para promotores y medios de comunicación.</p>
+            </div>
+            
+            <div class="assets-grid" style="display: flex; justify-content: center;">
+                <div class="asset-card" style="max-width: 450px; width: 100%;">
+                    <div class="asset-preview">
+                        <img src="Logo_03.png" alt="Logo DJ Morraiko Oficial" onerror="this.src='Logo_01.png';">
+                    </div>
+                    <div class="asset-info">
+                        <h3>Logotipo Oficial Destacado (Logo_03)</h3>
+                        <p>PNG Alta Resolución - Versión Principal para Cartelería y Prensa</p>
+                        <a href="Logo_03.png" download class="cta-btn"><i class="fa-solid fa-circle-down"></i> Descargar Logotipo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 48px;">
+                <!-- Link points to the print-ready PDF dossier inside the workspace folder as requested by the user -->
+                <a href="Dossier-de-DJ-Morraiko.pdf" download class="btn-outline"><i class="fa-solid fa-file-pdf"></i> Descargar Dossier PDF Oficial Actualizado</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contratación & Booking 2026</h2>
+                <p>¿Quieres llevar la Fiesta Parda a tu festival o sala? Ponte en contacto con nosotros.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <div class="info-block">
+                        <h3>Teléfono de Contacto</h3>
+                        <p><a href="tel:+34663080133">+34 663 08 01 33</a></p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3>Email Oficial</h3>
+                        <p><a href="mailto:morraiko@gmail.com">morraiko@gmail.com</a></p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3>Ubicación Base</h3>
+                        <p>Cáceres, Extremadura, España</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3>Redes Sociales</h3>
+                        <div class="social-row">
+                            <a href="https://www.instagram.com/djmorraiko/" class="social-circle" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/DjMorraiko/" class="social-circle" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://morraiko.blogspot.com/" class="social-circle" target="_blank"><i class="fa-solid fa-blog"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrap">
+                    <!-- Glassmorphic Success Message -->
+                    <div class="success-msg" id="success-msg">
+                        <i class="fa-solid fa-circle-check" style="font-size: 20px;"></i>
+                        <span>¡Solicitud enviada con éxito! El email se ha enviado a morraiko@gmail.com y nos pondremos en contacto contigo en breve.</span>
+                    </div>
+
+                    <!-- Glassmorphic Error/Warning Message -->
+                    <div class="error-msg" id="error-msg">
+                        <i class="fa-solid fa-triangle-exclamation" style="font-size: 20px;"></i>
+                        <span id="error-text">Para evitar spam, por favor espera 5 minutos entre solicitudes de contratación.</span>
+                    </div>
+                    
+                    <!-- Clean Booking Form with built-in AJAX and rate limiter -->
+                    <form id="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre / Promotora</label>
+                                <input type="text" id="name" required placeholder="Ej. Asociación de Vecinos / Festival X">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required placeholder="nombre@festival.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" placeholder="Ej. 600 000 000">
+                            </div>
+                            <div class="form-group">
+                                <label for="event-date">Fecha del Evento</label>
+                                <input type="date" id="event-date">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Detalles del Evento</label>
+                            <textarea id="message" rows="5" required placeholder="Cuéntanos más sobre el festival o sala, presupuesto estimado, localización..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-btn" style="width: 100%; justify-content: center; padding: 14px;">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar Solicitud de Booking
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <span class="footer-logo">DJ MORRAIKO</span>
+            <div class="footer-links">
+                <a href="#hero">Inicio</a>
+                <a href="#bio">Biografía</a>
+                <a href="#musica">Escuchar</a>
+                <a href="#eventos">Trayectoria</a>
+                <a href="#descargas">Prensa</a>
+                <a href="#booking">Contratación</a>
+            </div>
+            <p>&copy; 2026 DJ Morraiko. Creado con pasión por la música y la "Fiesta Parda". Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Audio Player & Booking Form Logic -->
+    <script>
+        // --- REAL AUDIO ENGINE WITH FALLBACK SIMULATOR ---
+        // Paths to local audio files in folder (if available, they will be loaded and played)
+        const tracks = [
+            { name: "Balkanwomad", src: "web 128/Balkanwomad.mp3", duration: "02:48", seconds: 168 },
+            { name: "El Embargo", src: "web 128/El_Embargo.mp3", duration: "03:21", seconds: 201 },
+            { name: "Huele a Azufre", src: "web 128/Huele_a_azufre.mp3", duration: "03:16", seconds: 196 },
+            { name: "No a La Mina", src: "web 128/No_a_la_mina.mp3", duration: "02:36", seconds: 156 }
+        ];
+
+        let currentTrackIndex = 0;
+        let isPlaying = false;
+        let elapsedSeconds = 0;
+        let isMuted = false;
+        
+        // JS Web Audio Engine
+        let audio = new Audio();
+        let useRealAudio = false;
+        let fallbackTimer = null;
+
+        // DOM elements
+        const trackTitle = document.getElementById('track-title');
+        const totalTime = document.getElementById('total-time');
+        const currentTime = document.getElementById('current-time');
+        const progressFill = document.getElementById('progress-fill');
+        const progressBar = document.getElementById('progress-bar');
+        const playBtn = document.getElementById('play-btn');
+        const playIcon = document.getElementById('play-icon');
+        const vinyl = document.getElementById('vinyl');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const muteBtn = document.getElementById('mute-btn');
+        const muteIcon = document.getElementById('mute-icon');
+        const trackItems = document.querySelectorAll('.track-item');
+        const visualizer = document.getElementById('visualizer');
+        const visBars = document.querySelectorAll('.visualizer-bar');
+
+        // Setup real audio listeners
+        audio.addEventListener('timeupdate', () => {
+            if (useRealAudio) {
+                const current = audio.currentTime;
+                const duration = audio.duration || tracks[currentTrackIndex].seconds;
+                currentTime.innerText = formatTime(current);
+                const pct = (current / duration) * 100;
+                progressFill.style.width = pct + "%";
+            }
+        });
+
+        audio.addEventListener('ended', () => {
+            nextTrack();
+        });
+
+        audio.addEventListener('error', (e) => {
+            // If the real audio file is missing or fails to load, gracefully degrade to fallback simulation
+            if (useRealAudio) {
+                console.log("Audio file missing. Falling back to high-end visual simulation mode.");
+                useRealAudio = false;
+                startFallbackTimer();
+            }
+        });
+
+        function updateVisualizer() {
+            if (!isPlaying) {
+                visBars.forEach(bar => bar.style.height = '4px');
+                return;
+            }
+            visBars.forEach(bar => {
+                const randomHeight = Math.floor(Math.random() * 28) + 4;
+                bar.style.height = randomHeight + 'px';
+            });
+        }
+
+        let visInterval = setInterval(updateVisualizer, 150);
+
+        function formatTime(secs) {
+            const m = Math.floor(secs / 60);
+            const s = Math.floor(secs % 60);
+            return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        }
+
+        function loadTrack(index) {
+            currentTrackIndex = index;
+            const track = tracks[index];
+            trackTitle.innerText = track.name;
+            totalTime.innerText = track.duration;
+            currentTime.innerText = "00:00";
+            progressFill.style.width = "0%";
+            elapsedSeconds = 0;
+            
+            // Remove active classes
+            trackItems.forEach(item => item.classList.remove('active'));
+            trackItems[index].classList.add('active');
+
+            // Attempt to load the real audio file in background
+            useRealAudio = true;
+            audio.src = track.src;
+            audio.load();
+        }
+
+        function togglePlay() {
+            isPlaying = !isPlaying;
+            if (isPlaying) {
+                playIcon.className = "fa-solid fa-pause";
+                vinyl.classList.add('playing');
+                
+                // Play real audio or fallback
+                if (useRealAudio) {
+                    audio.play().catch(err => {
+                        // File missing or autoplay blocked
+                        useRealAudio = false;
+                        startFallbackTimer();
+                    });
+                } else {
+                    startFallbackTimer();
+                }
+            } else {
+                playIcon.className = "fa-solid fa-play";
+                vinyl.classList.remove('playing');
+                if (useRealAudio) {
+                    audio.pause();
+                } else {
+                    clearInterval(fallbackTimer);
+                }
+            }
+        }
+
+        function startFallbackTimer() {
+            clearInterval(fallbackTimer);
+            const totalSecs = tracks[currentTrackIndex].seconds;
+            fallbackTimer = setInterval(() => {
+                elapsedSeconds++;
+                if (elapsedSeconds > totalSecs) {
+                    elapsedSeconds = 0;
+                    nextTrack();
+                    return;
+                }
+                currentTime.innerText = formatTime(elapsedSeconds);
+                const pct = (elapsedSeconds / totalSecs) * 100;
+                progressFill.style.width = pct + "%";
+            }, 1000);
+        }
+
+        function nextTrack() {
+            let nextIndex = currentTrackIndex + 1;
+            if (nextIndex >= tracks.length) nextIndex = 0;
+            const wasPlaying = isPlaying;
+            loadTrack(nextIndex);
+            if (wasPlaying) {
+                isPlaying = false;
+                togglePlay();
+            }
+        }
+
+        function prevTrack() {
+            let prevIndex = currentTrackIndex - 1;
+            if (prevIndex < 0) prevIndex = tracks.length - 1;
+            const wasPlaying = isPlaying;
+            loadTrack(prevIndex);
+            if (wasPlaying) {
+                isPlaying = false;
+                togglePlay();
+            }
+        }
+
+        // Click progress bar to scrub
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const width = rect.width;
+            const pct = clickX / width;
+            
+            if (useRealAudio && audio.duration) {
+                audio.currentTime = pct * audio.duration;
+            } else {
+                const totalSecs = tracks[currentTrackIndex].seconds;
+                elapsedSeconds = Math.floor(pct * totalSecs);
+                currentTime.innerText = formatTime(elapsedSeconds);
+                progressFill.style.width = (pct * 100) + "%";
+                if (isPlaying) {
+                    startFallbackTimer();
+                }
+            }
+        });
+
+        // Event listeners
+        playBtn.addEventListener('click', togglePlay);
+        nextBtn.addEventListener('click', nextTrack);
+        prevBtn.addEventListener('click', prevTrack);
+
+        muteBtn.addEventListener('click', () => {
+            isMuted = !isMuted;
+            audio.muted = isMuted;
+            if (isMuted) {
+                muteIcon.className = "fa-solid fa-volume-xmark";
+                muteBtn.style.color = "var(--primary)";
+            } else {
+                muteIcon.className = "fa-solid fa-volume-high";
+                muteBtn.style.color = "var(--text-light)";
+            }
+        });
+
+        // Click on tracks in playlist
+        trackItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                const wasPlaying = isPlaying;
+                loadTrack(index);
+                if (wasPlaying) {
+                    isPlaying = false;
+                    togglePlay();
+                } else {
+                    togglePlay();
+                }
+            });
+        });
+
+
+        // --- SECURE RATE-LIMITING AJAX BOOKING ENGINE ---
+        const bookingForm = document.getElementById('booking-form');
+        const successMsg = document.getElementById('success-msg');
+        const errorMsg = document.getElementById('error-msg');
+        const errorText = document.getElementById('error-text');
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            successMsg.style.display = 'none';
+            errorMsg.style.display = 'none';
+
+            // 1. Security Check: Prevent spamming from the same browser/device
+            const lastSubmit = localStorage.getItem('last_booking_submit');
+            const now = Date.now();
+            const cooldownPeriod = 5 * 60 * 1000; // 5 minutes in milliseconds
+            
+            if (lastSubmit && (now - lastSubmit < cooldownPeriod)) {
+                const secondsLeft = Math.ceil((cooldownPeriod - (now - lastSubmit)) / 1000);
+                const minutesLeft = Math.floor(secondsLeft / 60);
+                const secsRemaining = secondsLeft % 60;
+                errorText.innerText = `Para evitar spam, por favor espera ${minutesLeft}m ${secsRemaining}s antes de enviar otra solicitud.`;
+                errorMsg.style.display = 'flex';
+                return;
+            }
+
+            // Collect form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const date = document.getElementById('event-date').value;
+            const message = document.getElementById('message').value;
+
+            // Submit using Formsubmit.co AJAX API (100% Free, secure, no redirect!)
+            const submitBtn = bookingForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Enviando solicitud...';
+
+            fetch("https://formsubmit.co/ajax/morraiko@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    _subject: `Nueva Solicitud de Contratación: ${name}`,
+                    Cliente: name,
+                    Email: email,
+                    Telefono: phone,
+                    FechaEvento: date,
+                    Detalles: message
+                })
+            })
+            .then(response => {
+                if (!response.ok) throw new Error("Network response was not ok");
+                return response.json();
+            })
+            .then(data => {
+                // Set rate-limiting timestamp upon successful send
+                localStorage.setItem('last_booking_submit', Date.now());
+                successMsg.style.display = 'flex';
+                bookingForm.reset();
+            })
+            .catch(error => {
+                errorText.innerText = "Hubo un problema temporal con el envío. Por favor, escríbenos directamente a morraiko@gmail.com o llámanos.";
+                errorMsg.style.display = 'flex';
+                console.error("Formsubmit Error: ", error);
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            });
+        });
+
+
+        // Trigger radar animation after load
+        window.addEventListener('DOMContentLoaded', () => {
+            loadTrack(0); // Load first track on startup
+            setTimeout(() => {
+                const fills = document.querySelectorAll('.bar-fill');
+                fills.forEach(fill => {
+                    const width = fill.style.width;
+                    fill.style.width = '0%';
+                    setTimeout(() => {
+                        fill.style.width = width;
+                    }, 200);
+                });
+            }, 500);
+        });
+    </script>
+</body>
+</html>
